@@ -3,10 +3,13 @@
 Links you can find helpful during learning or working on projects
 
 ## Learning
+
+### Flex
 - [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 - [Test CSS Flexbox Rules](https://flexbox.help/)
 - [GAME Flexbox Froggy](https://flexboxfroggy.com/)
 - [GAME Flex Box Adventure](https://codingfantasy.com/games/flexboxadventure)
+- [Common CSS Flexbox Layout Patterns with Example Code](https://tobiasahlin.com/blog/common-flexbox-patterns/)
 
 
 ## Assets
