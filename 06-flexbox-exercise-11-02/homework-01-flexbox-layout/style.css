@@ -3,7 +3,7 @@ body {
 
   display: flex;
   gap: 1rem;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   padding: 2rem;
 }
 
@@ -21,10 +21,10 @@ footer {
   flex-basis: 100%;
 }
 
-main{
-  flex: 4 1 200px;
+main {
+  flex-basis: 500px;
 }
 
-aside{
-  flex: 1 1 50px;
+aside {
+  flex-basis: 500px;
 }
