@@ -45,7 +45,45 @@
     gap: 1rem;
   }
 
+  .footer .info {
+    grid-column: 1 / span 2;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 500px;
+    grid-template-columns: unset;
+    gap: 1rem;
+  }
+
+  .footer .navi-group {
+    margin-bottom: 0px;
+  }
+
+  .footer .info {
+    grid-column: unset;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .footer {
+    height: 340px;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    gap: 2rem;
+  }
+
   .footer .info{
-    grid-column: 1 /  span 2;
+    flex-grow: 2;
   }
 }

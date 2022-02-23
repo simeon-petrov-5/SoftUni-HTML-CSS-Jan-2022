@@ -61,3 +61,32 @@
 .header__nav .nav__item .nav__itemlink:hover {
   font-weight: bold;
 }
+
+@media screen and (min-width: 1000px) {
+  .header .mobile-menu {
+    display: none;
+  }
+  .header .btn:last-of-type {
+    margin-left: 1rem;
+    margin-right: 0px;
+  }
+
+  .header__nav {
+    position: relative;
+    left: unset;
+    top: unset;
+    background-color: var(--color-white);
+    width: auto;
+    max-height: unset;
+    margin-left: auto;
+  }
+
+  .header__nav .nav__list {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .header__nav .nav__item {
+    margin-bottom: 0px;
+  }
+}

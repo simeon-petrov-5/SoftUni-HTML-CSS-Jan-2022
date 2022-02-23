@@ -128,12 +128,16 @@ main {
     margin-bottom: 0;
   }
 
-  .general-section .img {
-    width: 100%;
-    max-width: 300px;
-    margin: 0;
+  .general-section .info {
+    width: calc(100% - 400px);
   }
 
+  .general-section .img {
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
   /* Certificates */
   .certificates .info {
     width: calc(100% - 380px - 1rem);
@@ -158,30 +162,6 @@ main {
   .career .btn {
     margin-top: 0.5rem;
   }
-
-  /* Circle overlay */
-  /* .general-section.diplomas {
-    overflow: hidden;
-  }
-  .overlay-circle {
-    display: block;
-    position: absolute;
-    width: 30vw;
-    height: 30vw;
-    background-color: var(--color-gray);
-    right: -10%;
-    top: -5%;
-    border-radius: 100%;
-  }
-
-  .overlay-circle > i{
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-size: 6rem;
-    color: var(--color-gray-light);
-  } */
 }
 
 @media screen and (min-width: 1200px) {
@@ -189,8 +169,45 @@ main {
     padding: 4rem;
   }
 
-  .general-section .img {
-    max-width: 400px;
+  /* Circle overlay */
+  .general-section.diplomas {
+    overflow: hidden;
+  }
+
+  .diplomas-wrapper {
+    overflow: hidden;
+    position: relative;
+  }
+
+  .diplomas-wrapper .general-section {
+    position: static;
+  }
+
+  .general-section.diplomas .info,
+  .general-section.diplomas .img {
+    z-index: 2;
+    position: relative;
+  }
+
+  .overlay-circle {
+    display: block;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-color: var(--color-gray);
+    right: -100px;
+    top: -180px;
+    border-radius: 100%;
+    z-index: 1;
+  }
+
+  .overlay-circle > i {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    font-size: 10rem;
+    color: var(--color-gray-light);
   }
 }
 
